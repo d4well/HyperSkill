@@ -65,6 +65,7 @@ def return_random_sentence(counted_dict):
 sentence = return_random_sentence(counted_dict)
 
 sentences = []
+
 for s in range(0, 3):
     sentence = return_random_sentence(counted_dict)
     sentences.append(sentence)
