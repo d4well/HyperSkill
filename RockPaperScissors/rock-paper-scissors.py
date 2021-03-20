@@ -5,32 +5,33 @@ print(f"Hello, {name}")
 
 input_options = input()
 
-all_options = ['gun', 'lightning', 'devil', 'dragon', 'water', 'air', 'paper', 'sponge', \
+ALL_OPTIONS = ['gun', 'lightning', 'devil', 'dragon', 'water', 'air', 'paper', 'sponge', \
                'wolf', 'tree', 'human', 'snake', 'scissors', 'fire', 'rock']
 
-wins = {option: [all_options[i] for i in \
-        range(all_options.index(option)-1,all_options.index(option) - 8, -1)]\
-        for option in all_options}
+wins = {option: [ALL_OPTIONS[i] for i in \
+        range(ALL_OPTIONS.index(option)-1, ALL_OPTIONS.index(option) - 8, -1)]\
+        for option in ALL_OPTIONS}
 
 if input_options:
     options = input_options.split(',')
 else:
     options = ['scissors', 'rock', 'paper']
 
-print("Okay, let's start")
 
 def rating():
     with open('rock_paper_rating.txt', 'r') as f:
         names = {name.strip('\n').split()[0]: int(name.strip('\n').split()[1]) for name in f.readlines()}
     return names
-        
+
+
 def set_value():
     if name not in names:
             names[name] = 0
-            
+
+
+print("Okay, let's start")           
 names = rating()
 set_value()
-##print(names)
 
 while True:
     flag1 = True
