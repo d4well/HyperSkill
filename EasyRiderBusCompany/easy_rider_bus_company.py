@@ -7,90 +7,7 @@ from numbers import Number
 ##TEST1
 ##json_data = """[{"bus_id" : 128, "stop_id" : 1, "stop_name" : "Prospekt Avenue", "next_stop" : 3, "stop_type" : "S", "a_time" : "08:12"}, {"bus_id" : 128, "stop_id" : 3, "stop_name" : "Elm Street", "next_stop" : 5, "stop_type" : "", "a_time" : "08:19"}, {"bus_id" : 128, "stop_id" : 5, "stop_name" : "Fifth Avenue", "next_stop" : 7, "stop_type" : "O", "a_time" : "08:25"}, {"bus_id" : 128, "stop_id" : 7, "stop_name" : "Sesame Street", "next_stop" : 0, "stop_type" : "F", "a_time" : "08:37"}, {"bus_id" : 512, "stop_id" : 4, "stop_name" : "Bourbon Street", "next_stop" : 6, "stop_type" : "", "a_time" : "08:13"}, {"bus_id" : 512, "stop_id" : 6, "stop_name" : "Sunset Boulevard", "next_stop" : 0, "stop_type" : "F", "a_time" : "08:16"}]"""
 
-##json_data = """[
-##    {
-##        "bus_id": 128,
-##        "stop_id": 1,
-##        "stop_name": "Prospekt Avenue",
-##        "next_stop": 3,
-##        "stop_type": "S",
-##        "a_time": "08:12"
-##    },
-##    {
-##        "bus_id": 128,
-##        "stop_id": 3,
-##        "stop_name": "Elm Street",
-##        "next_stop": 5,
-##        "stop_type": "",
-##        "a_time": "08:19"
-##    },
-##    {
-##        "bus_id": 128,
-##        "stop_id": 5,
-##        "stop_name": "Fifth Avenue",
-##        "next_stop": 7,
-##        "stop_type": "O",
-##        "a_time": "08:25"
-##    },
-##    {
-##        "bus_id": 128,
-##        "stop_id": 7,
-##        "stop_name": "Sesame Street",
-##        "next_stop": 0,
-##        "stop_type": "F",
-##        "a_time": "08:37"
-##    },
-##    {
-##        "bus_id": 256,
-##        "stop_id": 2,
-##        "stop_name": "Pilotow Street",
-##        "next_stop": 3,
-##        "stop_type": "S",
-##        "a_time": "09:20"
-##    },
-##    {
-##        "bus_id": 256,
-##        "stop_id": 3,
-##        "stop_name": "Elm Street",
-##        "next_stop": 6,
-##        "stop_type": "",
-##        "a_time": "09:45"
-##    },
-##    {
-##        "bus_id": 256,
-##        "stop_id": 6,
-##        "stop_name": "Sunset Boulevard",
-##        "next_stop": 7,
-##        "stop_type": "",
-##        "a_time": "09:59"
-##    },
-##    {
-##        "bus_id": 256,
-##        "stop_id": 7,
-##        "stop_name": "Sesame Street",
-##        "next_stop": 0,
-##        "stop_type": "F",
-##        "a_time": "10:12"
-##    },
-##    {
-##        "bus_id": 512,
-##        "stop_id": 4,
-##        "stop_name": "Bourbon Street",
-##        "next_stop": 6,
-##        "stop_type": "S",
-##        "a_time": "08:13"
-##    },
-##    {
-##        "bus_id": 512,
-##        "stop_id": 6,
-##        "stop_name": "Sunset Boulevard",
-##        "next_stop": 0,
-##        "stop_type": "F",
-##        "a_time": "08:16"
-##    }
-##]"""
-
-##TEST3
+##TEST2
 ##json_data = """[{"bus_id" : 128, "stop_id" : 1, "stop_name" : "Prospekt Avenue", "next_stop" : 3, "stop_type" : "S", "a_time" : "08:12"},
 ##{"bus_id" : 128, "stop_id" : 3, "stop_name" : "Elm Street", "next_stop" : 5, "stop_type" : "", "a_time" : "08:19"},
 ##{"bus_id" : 128, "stop_id" : 5, "stop_name" : "Fifth Avenue", "next_stop" : 7, "stop_type" : "O", "a_time" : "08:25"},
@@ -102,7 +19,7 @@ from numbers import Number
 ##{"bus_id" : 512, "stop_id" : 4, "stop_name" : "Bourbon Street", "next_stop" : 6, "stop_type" : "S", "a_time" : "08:13"},
 ##{"bus_id" : 512, "stop_id" : 6, "stop_name" : "Sunset Boulevard", "next_stop" : 0, "stop_type" : "F", "a_time" : "08:16"}]"""
 
-##TEST4
+##TEST3
 ##json_data = """[{"bus_id" : 128, "stop_id" : 1, "stop_name" : "Fifth Avenue", "next_stop" : 4, "stop_type" : "S", "a_time" : "08:12"},
 ##{"bus_id" : 128, "stop_id" : 4, "stop_name" : "Abbey Road", "next_stop" : 5, "stop_type" : "", "a_time" : "08:19"},
 ##{"bus_id" : 128, "stop_id" : 5, "stop_name" : "Santa Monica Boulevard", "next_stop" : 8, "stop_type" : "O", "a_time" : "08:25"},
@@ -130,6 +47,7 @@ from numbers import Number
 ##{"bus_id" : 1024, "stop_id" : 21, "stop_name" : "Karlikowska Avenue", "next_stop" : 12, "stop_type" : "S", "a_time" : "13:01"},
 ##{"bus_id" : 1024, "stop_id" : 12, "stop_name" : "Sesame Street", "next_stop" : 0, "stop_type" : "F", "a_time" : "14:00"},
 ##{"bus_id" : 512, "stop_id" : 19, "stop_name" : "Prospekt Avenue", "next_stop" : 0, "stop_type" : "F", "a_time" : "14:11"}]"""
+
 json_data = """[
     {
         "bus_id": 512,
